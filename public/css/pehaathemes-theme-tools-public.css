@@ -1,0 +1,41 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.pehaathemes_theme_tools_widget_image_and_text.pht-text-center {
+ 	text-align:center;
+ }
+.pehaathemes_theme_tools_widget_image_and_text .pht-spacedletters {
+ 	letter-spacing:1px;
+ }
+.pehaathemes_theme_tools_widget_recent_posts ul {
+	margin-left:0;
+}
+.pehaathemes_theme_tools_widget_recent_posts .media,
+.pehaathemes_theme_tools_widget_recent_posts .media__body { 
+	display:block;
+	overflow:hidden;
+	margin-bottom:24px;
+}
+.pehaathemes_theme_tools_widget_recent_posts .media__body { 
+	
+	margin:0;
+}
+.pehaathemes_theme_tools_widget_recent_posts .media__img {
+   float:left;
+}
+.pehaathemes_theme_tools_widget_recent_posts .media__img img {
+  	height:48px;
+  	width:auto;
+}
+.pehaathemes_theme_tools_widget_recent_posts .media--small > .media__img {
+    margin-right: 12px;
+}
+
+.pehaathemes_theme_tools_widget_recent_posts .pht-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}

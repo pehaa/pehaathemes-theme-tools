@@ -1,0 +1,14 @@
+.pht-megamenu-img-placeholder {
+	display:block;
+	max-width:160px;
+	margin:12px auto;
+}
+.pht-upload-thumbnail {
+	width:100%;
+	text-align:center;
+}
+.pht-remove-thumbnail {
+	font-size:11px;
+	
+}
+.pht-clear {text-align: right;}
