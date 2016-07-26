@@ -30,7 +30,7 @@ class PeHaaThemes_Theme_Tools_Widget_Image_and_Text extends PeHaaThemes_Theme_To
 			return;
 		}
 		wp_enqueue_media();
-		wp_enqueue_script( 'pehaathemes-theme-tools-media-widget-scipt',  plugin_dir_url( __FILE__ ) . 'js/pehaathemes-theme-tools-upload-media.js', array( 'jquery', 'media-upload' ) );
+		wp_enqueue_script( 'pehaathemes-theme-tools-media-widget-scipt',  plugin_dir_url( __FILE__ ) . 'js/pehaathemes-theme-tools-upload-media.min.js', array( 'jquery', 'media-upload' ) );
 		wp_enqueue_style( 'pehaathemes-theme-tools-media-widget-style', plugin_dir_url( __FILE__ ) . 'css/pehaathemes-theme-tools-widgets.css' );
 	}
 
