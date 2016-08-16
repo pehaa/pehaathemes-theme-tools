@@ -15,8 +15,8 @@
  * @wordpress-plugin
  * Plugin Name:       PeHaa THEMES Theme Tools
  * Plugin URI:        http://github.com/pehaa/pehaathemes-theme-tools/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Description:       A few tools for PeHaa THEMES Premium Themes 
+ * Version:           1.0.1
  * Author:            PeHaa THEMES
  * Author URI:        http://wptemplates.pehaa.com/
  * License:           GPL-2.0+

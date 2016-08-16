@@ -23,5 +23,8 @@ e.g.
 
 ## Changelog ##
 
+### 1.0.1 ###
+* Fixed short plugin description
+
 ### 1.0 ###
 * Release

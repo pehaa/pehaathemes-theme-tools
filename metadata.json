@@ -1,11 +1,11 @@
 {
 	"name": "PeHaa Themes Page Builder",
 	"slug": "pehaathemes-theme-tools",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"download_url": "http://wp-plugins.pehaa.com/pehaathemes-theme-tools/pehaathemes-theme-tools.zip",
 	"sections": {
 		"description": "A WordPress plugin. PeHaa THEMES Theme Tools",
-		"changelog": "<strong>1.0.0</strong><p>Release</p>"
+		"changelog": "<strong>1.0.1</strong><p>Fixed short description</p><strong>1.0.0</strong><p>Release</p>"
 	},
 	"homepage": "http://github.com/pehaa/pehaathemes-theme-tools",
 	"tested": "4.6",

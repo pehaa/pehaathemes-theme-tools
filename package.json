@@ -1,6 +1,6 @@
 {
   "name": "pehaathemes-theme-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A WordPress plugin. PeHaa THEMES Theme Tools",
   "main": "pehaathemes-theme-tools.php",
   "scripts": {
@@ -19,7 +19,7 @@
   "license": "GPL",
   "plugin_name": "PeHaa Themes Page Builder",
   "download_url": "http://wp-plugins.pehaa.com/pehaathemes-theme-tools/pehaathemes-theme-tools.zip",
-  "changelog": "<strong>1.0.0</strong><p>Release</p>",
+  "changelog": "<strong>1.0.1</strong><p>Fixed short description</p><strong>1.0.0</strong><p>Release</p>",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-compress": "^0.13.0",
