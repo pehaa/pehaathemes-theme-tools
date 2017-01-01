@@ -57,25 +57,25 @@ class PeHaaThemes_Theme_Tools_Widget_Recent_Posts extends PeHaaThemes_Theme_Tool
 			<ul>
 				<?php 
 				while ( $r->have_posts() ) : $r->the_post(); ?>
-					<li class="media media--small pht-widget_recent_entries__entry">
+					<li class="media o-media media--small o-media--small pht-widget_recent_entries__entry">
 						<?php 
 						if ( has_post_thumbnail( get_the_ID() ) ) { 
 							if ( function_exists( 'pehaathemes_get_post_thumb' ) ) { ?>
-								<a class="media__img" href="<?php the_permalink(); ?>"><?php echo pehaathemes_get_post_thumb( get_the_ID(), array( 144, 96 ), false, array( 'class' => 'pht-widget_recent_entries__img pht-mb0' ) ); ?></a>
+								<a class="media__img o-media__img" href="<?php the_permalink(); ?>" rel="bookmark"><?php echo pehaathemes_get_post_thumb( get_the_ID(), array( 144, 96 ), false, array( 'class' => 'pht-widget_recent_entries__img pht-mb0' ) ); ?></a>
 							<?php } else { ?>
-								<a class="media__img" href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'thumbnail', array( 'class' => 'pht-widget_recent_entries__img pht-mb0' ) ); ?></a>
+								<a class="media__img o-media__img" href="<?php the_permalink(); ?>" rel="bookmark"><?php echo get_the_post_thumbnail( get_the_ID(), 'thumbnail', array( 'class' => 'pht-widget_recent_entries__img pht-mb0' ) ); ?></a>
 							<?php } ?>
 							
 						<?php } ?>
-						<div class="media__body">
+						<div class="media__body o-media__body">
 							<?php if ( $show_date ) { 
 								if ( 'pht_event' === $post_type && class_exists( 'PeHaa_Themes_Events_Public' ) ) { ?>
-									<div class="pht-micro pht-italic post-date"><?php echo get_post_meta( get_the_ID(), 'pht_events_startdate', true ); ?></div>
+									<div class="post-date <?php echo esc_attr( apply_filters( 'pht_theme_tools_widget_post_date_class', 'pht-micro pht-italic')); ?>" rel="bookmark"><?php echo get_post_meta( get_the_ID(), 'pht_events_startdate', true ); ?></div>
 								<?php } else { ?>
-									<div class="pht-micro pht-italic post-date"><?php echo get_the_date(); ?></div>
+									<div class="post-date <?php echo esc_attr( apply_filters( 'pht_theme_tools_widget_post_date_class', 'pht-micro pht-italic')); ?>"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php echo get_the_date(); ?></a></div>
 								<?php } 
 							} ?>
-							<a href="<?php the_permalink(); ?>" class="pht-secondfont pht-truncate"><?php get_the_title() ? the_title() : the_ID(); ?></a>	
+							<a href="<?php the_permalink(); ?>" class="pht-secondfont pht-truncate u-truncate" rel="bookmark"><?php get_the_title() ? the_title() : the_ID(); ?></a>	
 						</div>
 					</li>
 				<?php endwhile; ?>

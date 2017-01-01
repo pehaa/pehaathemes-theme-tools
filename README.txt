@@ -23,6 +23,10 @@ e.g.
 
 == Changelog ==
 
+= 1.0.2 =
+* Recent Posts Widget - additional css classes and date with permalink
+
+
 = 1.0.1 =
 * Fixed short plugin description
 

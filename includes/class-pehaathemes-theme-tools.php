@@ -69,7 +69,7 @@ class PeHaaThemes_Theme_Tools {
 	public function __construct() {
 
 		$this->plugin_name = 'pehaathemes-theme-tools';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 
 		$this->load_dependencies();
 		$this->set_locale();
