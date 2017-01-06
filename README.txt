@@ -2,7 +2,7 @@
 Contributors: PeHaa
 Tags: tools
 Requires at least: 4.0
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,7 +25,8 @@ e.g.
 
 = 1.0.2 =
 * Recent Posts Widget - additional css classes and date with permalink
-
+* Fixed image dimensions for the Image and Text widget
+* Update Plugin Update Checker Library
 
 = 1.0.1 =
 * Fixed short plugin description
