@@ -49,7 +49,7 @@ class PeHaaThemes_Theme_Tools_Widget_Image_and_Text extends PeHaaThemes_Theme_To
 
 		if ( $img_id && wp_get_attachment_image( $img_id ) ) {
 			if ( function_exists( 'pehaathemes_get_att_img' ) ) {
-				$image = pehaathemes_get_att_img( $img_id, array( 2*$img_dimension, 2*$img_dimension ), false, array( 'width' => $img_dimension, 'height' => $img_dimension, 'class' => 'pht-rounded' ) );
+				$image = pehaathemes_get_att_img( $img_id, array( $img_dimension, $img_dimension ), false, array( 'width' => $img_dimension, 'height' => $img_dimension, 'class' => 'pht-rounded' ) );
 			} else {
 				$image = wp_get_attachment_image( $img_id );
 			}
