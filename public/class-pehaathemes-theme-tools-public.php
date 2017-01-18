@@ -87,7 +87,7 @@ class PeHaaThemes_Theme_Tools_Public {
 	public function add_shortcodes() {
 
 		foreach ( $this->shortcodes as $key => $value ) {
-			add_shortcode( $key, apply_filters( $value . '-method', array( $this, $value ) ) );
+			add_shortcode( $key, apply_filters( $value . '_method', array( $this, $value ) ) );
 		}
 	}
 	
