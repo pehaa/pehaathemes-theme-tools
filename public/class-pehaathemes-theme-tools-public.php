@@ -47,11 +47,21 @@ class PeHaaThemes_Theme_Tools_Public {
 	 * @param      string    $plugin_name       The name of the plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
+
+	private $shortcodes;
+
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
+		$this->shortcodes = array(
+			'pht_get_the_tag_list' => 'pht_shortcode_get_the_tag_list',
+			'pht-get-the-tag-list' => 'pht_shortcode_get_the_tag_list',
+			'pht_post_navigation' => 'pht_shortcode_post_navigation',
+			'pht-post-navigation' => 'pht_shortcode_post_navigation'
+		);
+		
 	}
 
 	/**
@@ -74,4 +84,30 @@ class PeHaaThemes_Theme_Tools_Public {
 
 	}
 
+	public function add_shortcodes() {
+
+		foreach ( $this->shortcodes as $key => $value ) {
+			add_shortcode( $key, apply_filters( $value . '-method', array( $this, $value ) ) );
+		}
+	}
+	
+	public function pht_shortcode_get_the_tag_list( $atts, $content = NULL ) {
+		$atts = shortcode_atts( array(
+			'post_id' => '',
+			'taxonomy' => 'post_tag',
+			'class' =>  apply_filters( 'pehaathemes-theme-tools_get_the_tag_list_class', '' ),
+			'separator' => ' &middot; '
+		), $atts );
+
+		ob_start();
+			$post_id = $atts['post_id'] ? $atts['post_id'] : get_the_ID();
+			the_terms( intval( $post_id ), esc_attr( $atts['taxonomy'] ) , '<span class="' . esc_attr( $atts['class'] ) . '">' ,'</span>' . esc_html( $atts['separator'] ) . '<span class="' . esc_attr( $atts['class'] ) . '">','</span> ');
+		$output = ob_get_contents();
+		ob_end_clean();
+		return $output;		
+	}
+
+	public function pht_shortcode_post_navigation() {
+		return;
+	}
 }
