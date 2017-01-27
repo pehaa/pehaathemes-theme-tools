@@ -1,14 +1,29 @@
-.pht-megamenu-img-placeholder {
-	display:block;
-	max-width:160px;
+.pht-img__ctnr {
 	margin:12px auto;
+	
+}
+.pht-img__ctnr--set {
+	width:150px;
+	height:150px;
+}
+.pht-img__ctnr--empty img {
+	display:none;
+}
+.pht-img-placeholder {
+	
+	object-fit:cover;
+	width:100%;
+	height:100%;
+	
 }
 .pht-upload-thumbnail {
 	width:100%;
 	text-align:center;
 }
 .pht-remove-thumbnail {
-	font-size:11px;
-	
+	font-size:11px;	
+}
+.pht-img__ctnr--empty + .pht-remove-thumbnail {
+	display:none;
 }
 .pht-clear {text-align: right;}

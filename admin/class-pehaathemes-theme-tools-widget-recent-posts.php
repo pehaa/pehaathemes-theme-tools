@@ -70,12 +70,12 @@ class PeHaaThemes_Theme_Tools_Widget_Recent_Posts extends PeHaaThemes_Theme_Tool
 						<div class="media__body o-media__body">
 							<?php if ( $show_date ) { 
 								if ( 'pht_event' === $post_type && class_exists( 'PeHaa_Themes_Events_Public' ) ) { ?>
-									<div class="post-date <?php echo esc_attr( apply_filters( 'pht_theme_tools_widget_post_date_class', 'pht-micro pht-italic')); ?>" rel="bookmark"><?php echo get_post_meta( get_the_ID(), 'pht_events_startdate', true ); ?></div>
+									<div class="post-date <?php echo esc_attr( apply_filters( 'pht_theme_tools_recent_posts_widget_post_date_class', 'pht-micro pht-italic')); ?>" rel="bookmark"><?php echo get_post_meta( get_the_ID(), 'pht_events_startdate', true ); ?></div>
 								<?php } else { ?>
 									<div class="post-date <?php echo esc_attr( apply_filters( 'pht_theme_tools_widget_post_date_class', 'pht-micro pht-italic')); ?>"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php echo get_the_date(); ?></a></div>
 								<?php } 
 							} ?>
-							<a href="<?php the_permalink(); ?>" class="pht-secondfont pht-truncate u-truncate" rel="bookmark"><?php get_the_title() ? the_title() : the_ID(); ?></a>	
+							<a href="<?php the_permalink(); ?>" class="<?php echo esc_attr( apply_filters( 'pht_theme_tools__recent_posts_widget_post_link_class', 'pht-secondfont pht-truncate u-truncate' ) ); ?>" rel="bookmark"><?php get_the_title() ? the_title() : the_ID(); ?></a>	
 						</div>
 					</li>
 				<?php endwhile; ?>

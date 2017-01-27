@@ -98,18 +98,21 @@ class PeHaaThemes_Theme_Tools_Widget_Image_and_Text extends PeHaaThemes_Theme_To
 			<input id="<?php echo esc_attr( $this->get_field_id( 'style' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'style' ) ); ?>" type="checkbox" <?php checked( isset($instance['style'] ) ? $instance['style'] : 0); ?> />
 			<label for="<?php echo esc_attr( $this->get_field_id( 'style' ) ); ?>"><?php esc_html_e( 'Center and increase the letter spacing.', 'pehaathemes-theme-tools' ); ?></label>
 		</p>
-		<p class="pht-clear">
+		<div class="pht-clear">
 			<a href="#" class="js-pht-upload-thumbnail pht-upload-thumbnail button button-primary"><?php esc_html_e( 'Set Image', 'pehaathemes-theme-tools' ); ?></a>
-			<input type="hidden" id="<?php echo esc_attr( $this->get_field_name( 'img_id' ) ); ?>" class="pht-new-media-image widefat code edit-menu-item-megamenu-thumbnail" name="<?php echo esc_attr( $this->get_field_name( 'img_id' ) ); ?>" value="<?php echo esc_attr( $img_id ); ?>" />
+			<input type="hidden" id="<?php echo esc_attr( $this->get_field_name( 'img_id' ) ); ?>" class="pht-new-media-image widefat code edit-menu-item-thumbnail" name="<?php echo esc_attr( $this->get_field_name( 'img_id' ) ); ?>" value="<?php echo esc_attr( $img_id ); ?>" />
+			<?php $image_set =  $img_id && wp_get_attachment_image( $img_id ); ?>
+			<div class="js-img-ctnr pht-img__ctnr pht-img__ctnr--<?php echo $image_set ? 'set' : 'empty'; ?>">
 			<?php 
-				if ( $img_id && wp_get_attachment_image( $img_id ) ) { 
-					echo wp_get_attachment_image( $img_id, 'thumbnail', '', array( 'class' => 'pht-megamenu-img-placeholder' ) ); 
+				if (  $image_set ) { 
+					echo wp_get_attachment_image( $img_id, 'thumbnail', '', array( 'class' => 'pht-img-placeholder' ) ); 
 				} else { ?>
-					<img class="pht-megamenu-img-placeholder" src="">
+					<img class="pht-img-placeholder" src="">
 				<?php }
-			?>
+				?>
+			</div>
 			<a href="#" class="js-pht-remove-thumbnail pht-remove-thumbnail"><?php esc_html_e( 'Remove Image', 'pehaathemes-theme-tools' ); ?></a>			
-		</p>
+		</div>
 <?php
 	}
 }
