@@ -22,9 +22,17 @@ class PeHaaThemes_Theme_Tools_Widget_Recent_Posts extends PeHaaThemes_Theme_Tool
 
 		ob_start();
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : esc_html__( 'Recent Posts', 'pehaathemes-theme-tools' );
+		$skip_title = isset( $instance['skip_title'] ) ? $instance['skip_title'] : false;
 
-		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
+		$title = false;
+
+		if ( !$skip_title ) {
+
+			$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : esc_html__( 'Recent Posts', 'pehaathemes-theme-tools' );
+
+			$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
+
+		}
 
 		$post_type = isset( $instance['post_type'] ) ? esc_attr( $instance['post_type'] ) : 'post';
 
@@ -93,6 +101,7 @@ class PeHaaThemes_Theme_Tools_Widget_Recent_Posts extends PeHaaThemes_Theme_Tool
 	public function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['skip_title'] = isset( $new_instance['skip_title'] ) ? (bool) $new_instance['skip_title'] : false;
 		$instance['post_type']	= isset( $new_instance['post_type'] ) ? esc_attr( $new_instance['post_type'] ) : 'post';
 		$instance['number'] = (int) $new_instance['number'];
 		$instance['show_date'] = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
@@ -102,12 +111,17 @@ class PeHaaThemes_Theme_Tools_Widget_Recent_Posts extends PeHaaThemes_Theme_Tool
 
 	public function form( $instance ) {
 		$title     = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
+		$skip_title = isset( $instance['skip_title'] ) ? (bool) $instance['skip_title'] : false;
 		$post_type	= isset( $instance['post_type'] ) ? esc_attr( $instance['post_type'] ) : 'post';
 		$number    = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
 		$show_date = isset( $instance['show_date'] ) ? (bool) $instance['show_date'] : false; ?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'pehaathemes-theme-tools' ); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+		</p>
+		<p>
+			<input class="checkbox" type="checkbox" <?php checked( $skip_title ); ?> id="<?php echo esc_attr( $this->get_field_id( 'skip_title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'skip_title' ) ); ?>" />
+			<label for="<?php echo esc_attr( $this->get_field_id( 'skip_title' ) ); ?>"><?php esc_html_e( 'Disable post title?', 'pehaathemes-theme-tools' ); ?></label>
 		</p>
 		<?php if ( class_exists( 'PeHaaThemes_Theme_Start' ) ) { ?>
 			<p>
