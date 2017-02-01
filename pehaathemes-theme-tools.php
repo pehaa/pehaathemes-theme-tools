@@ -16,7 +16,7 @@
  * Plugin Name:       PeHaa THEMES Theme Tools
  * Plugin URI:        http://github.com/pehaa/pehaathemes-theme-tools/
  * Description:       A few tools for PeHaa THEMES Premium Themes 
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            PeHaa THEMES
  * Author URI:        http://wptemplates.pehaa.com/
  * License:           GPL-2.0+

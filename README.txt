@@ -23,6 +23,11 @@ e.g.
 
 == Changelog ==
 
+= 1.0.3 =
+* Recent Posts Widget - possibility to skip the title
+* Shortodes - navigation and taxonomy
+* Fixed image loader
+
 = 1.0.2 =
 * Recent Posts Widget - additional css classes and date with permalink
 * Fixed image dimensions for the Image and Text widget
