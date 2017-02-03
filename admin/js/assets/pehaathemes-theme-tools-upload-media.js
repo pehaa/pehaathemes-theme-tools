@@ -27,8 +27,6 @@
 		},
 
 		media_frame : function() {
-			
-			var pehaathemes_media_frame;
 
 			$( document ).on( 'click', '.js-pht-upload-thumbnail', function( e ){
 				
@@ -41,7 +39,7 @@
 					return;
 				}
 
-				pehaathemes_media_frame = wp.media.frames.pehaathemes_media_frame = wp.media( {
+				var pehaathemes_media_frame = wp.media.frames.pehaathemes_media_frame = wp.media( {
 					className: 'media-frame pht-media-frame',
 					frame: 'select',
 					multiple: false,
