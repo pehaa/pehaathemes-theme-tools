@@ -75,7 +75,8 @@ function run_pehaathemes_theme_tools() {
 run_pehaathemes_theme_tools();
 
 require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = PucFactory::buildUpdateChecker(
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'http://wp-plugins.pehaa.com/pehaathemes-theme-tools/metadata.json',
-    __FILE__
+    __FILE__,
+    'pehaathemes-theme-tools'
 );
