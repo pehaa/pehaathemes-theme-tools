@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PeHaa THEMES Theme Tools 1.0.3\n"
 "Report-Msgid-Bugs-To: info@pehaa.com\n"
-"POT-Creation-Date: 2017-02-01 07:34:12+00:00\n"
+"POT-Creation-Date: 2017-03-08 08:30:04+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -176,24 +176,24 @@ msgstr ""
 msgid "Remote file is too large, limit is %s"
 msgstr ""
 
-#: plugin-update-checker/github-checker.php:119
-msgid "There is no changelog available."
-msgstr ""
-
-#: plugin-update-checker/plugin-update-checker.php:776
+#: plugin-update-checker/Puc/v4/Plugin/UpdateChecker.php:358
 msgid "Check for updates"
 msgstr ""
 
-#: plugin-update-checker/plugin-update-checker.php:820
+#: plugin-update-checker/Puc/v4/Plugin/UpdateChecker.php:404
 msgid "This plugin is up to date."
 msgstr ""
 
-#: plugin-update-checker/plugin-update-checker.php:822
+#: plugin-update-checker/Puc/v4/Plugin/UpdateChecker.php:406
 msgid "A new version of this plugin is available."
 msgstr ""
 
-#: plugin-update-checker/plugin-update-checker.php:824
+#: plugin-update-checker/Puc/v4/Plugin/UpdateChecker.php:408
 msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: plugin-update-checker/Puc/v4/Vcs/PluginUpdateChecker.php:83
+msgid "There is no changelog available."
 msgstr ""
 
 #. Plugin Name of the plugin/theme

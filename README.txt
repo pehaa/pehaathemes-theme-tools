@@ -27,6 +27,7 @@ e.g.
 * Recent Posts Widget - possibility to skip the title
 * Shortodes - navigation and taxonomy
 * Fixed image loader
+* Update Plugin Update Checker
 
 = 1.0.2 =
 * Recent Posts Widget - additional css classes and date with permalink
