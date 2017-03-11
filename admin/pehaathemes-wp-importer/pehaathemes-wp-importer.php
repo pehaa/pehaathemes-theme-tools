@@ -609,8 +609,13 @@ if ( class_exists( 'WP_Importer' ) && ! class_exists( 'PeHaaThemes_Import' ) ) {
 		 */
 		function process_menu_item( $item ) {
 
-			if ( class_exists( 'Coollab_Setup' ) && isset( Coollab_Setup::$demo_menu_is_imported ) && Coollab_Setup::$demo_menu_is_imported ) {
-				return;
+			if ( class_exists( 'PeHaaThemes_Theme_Start' ) && property_exists( 'PeHaaThemes_Theme_Start', 'theme_name' ) &&  PeHaaThemes_Theme_Start::$theme_name ) {
+
+				$setup_class = PeHaaThemes_Theme_Start::$theme_name . '_Setup';
+
+				if ( class_exists( $setup_class ) && isset( $setup_class::$demo_menu_is_imported ) && $setup_class::$demo_menu_is_imported ) {
+					return;
+				}
 			}
 
 			// skip draft, orphaned menu items
