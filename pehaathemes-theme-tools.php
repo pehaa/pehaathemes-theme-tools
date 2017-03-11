@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              http://github.com/pehaa/pehaathemes-theme-tools/
- * @since             1.0.1
+ * @since             1.0.0
  * @package           PeHaaThemes_Theme_Tools
  *
  * @wordpress-plugin

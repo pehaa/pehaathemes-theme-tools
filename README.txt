@@ -23,6 +23,9 @@ e.g.
 
 == Changelog ==
 
+= 1.0.4 =
+* Protect form doubled menu items
+
 = 1.0.3 =
 * Recent Posts Widget - possibility to skip the title
 * Shortodes - navigation and taxonomy

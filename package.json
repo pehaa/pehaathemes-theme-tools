@@ -1,6 +1,6 @@
 {
   "name": "pehaathemes-theme-tools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A WordPress plugin. PeHaa THEMES Theme Tools",
   "main": "pehaathemes-theme-tools.php",
   "scripts": {
@@ -19,7 +19,7 @@
   "license": "GPL",
   "plugin_name": "PeHaa Themes Page Builder",
   "download_url": "http://wp-plugins.pehaa.com/pehaathemes-theme-tools/pehaathemes-theme-tools.zip",
-  "changelog": "<strong>1.0.3</strong><ul><li>Recent Posts Widget - possibility to skip the title</li><li>Shortodes - navigation and taxonomy</li><li>Fixed image loader</li><li>Update Plugin Update Checker</li></ul><strong>1.0.2</strong><ul><li>Recent Posts Widget - additional css classes and date with permalink</li><li>Fixed image dimensions for the Image and Text widget</li><li>Update Plugin Update Checker Library</li></ul><strong>1.0.1</strong><p>Fixed short description</p><strong>1.0.0</strong><p>Release</p>",
+  "changelog": "<strong>1.0.3</strong><ul><li>Protect form doubled menu items</li></ul><strong>1.0.3</strong><ul><li>Recent Posts Widget - possibility to skip the title</li><li>Shortodes - navigation and taxonomy</li><li>Fixed image loader</li><li>Update Plugin Update Checker</li></ul><strong>1.0.2</strong><ul><li>Recent Posts Widget - additional css classes and date with permalink</li><li>Fixed image dimensions for the Image and Text widget</li><li>Update Plugin Update Checker Library</li></ul><strong>1.0.1</strong><p>Fixed short description</p><strong>1.0.0</strong><p>Release</p>",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-compress": "^0.13.0",

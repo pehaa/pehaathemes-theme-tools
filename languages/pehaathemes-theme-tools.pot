@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PeHaa THEMES Theme Tools 1.0.3\n"
 "Report-Msgid-Bugs-To: info@pehaa.com\n"
-"POT-Creation-Date: 2017-03-08 08:30:04+00:00\n"
+"POT-Creation-Date: 2017-03-11 16:26:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -144,35 +144,35 @@ msgstr ""
 msgid "Failed to import %s &#8220;%s&#8221;"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:633
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:638
 msgid "Menu item skipped due to missing menu slug"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:640
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:645
 msgid "Menu item skipped due to invalid menu slug: %s"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:706
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:711
 msgid "Fetching attachments is not enabled"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:719
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:724
 msgid "Invalid file type"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:779
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:784
 msgid "Remote server returned %1$d %2$s for %3$s"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:792
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:797
 msgid "Remote file is incorrect size"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:797
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:802
 msgid "Zero size file downloaded"
 msgstr ""
 
-#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:803
+#: admin/pehaathemes-wp-importer/pehaathemes-wp-importer.php:808
 msgid "Remote file is too large, limit is %s"
 msgstr ""
 
